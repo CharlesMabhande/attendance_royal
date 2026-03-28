@@ -123,6 +123,15 @@ Older UI captures from an earlier “ClickResult” build may still illustrate t
 
 ---
 
+## Credits & contact (design / development)
+
+Designed by **CharlzTech Web Developers** — **Charles Mabhande**
+
+- **Phone:** [+263 77 631 8768](tel:+263776318768)
+- **Email:** [charliemabhande@gmail.com](mailto:charliemabhande@gmail.com)
+
+---
+
 ## License
 
 Use and deployment are subject to your school’s policies. Add a `LICENSE` file if you want an explicit open-source or proprietary terms.
