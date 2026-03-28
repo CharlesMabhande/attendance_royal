@@ -1,0 +1,20 @@
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs & temp
+*.log
+*.tmp
+error_log
+
+# Archives (avoid committing large zips)
+*.zip
+
+# PHP (optional local overrides)
+.env
+.env.*

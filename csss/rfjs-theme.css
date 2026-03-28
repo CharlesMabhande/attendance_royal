@@ -1,0 +1,84 @@
+/**
+ * Royal Family Junior School — RFJS portal tokens (purple gradient family).
+ * Link this file where pages use var(--rfjs-*).
+ */
+@import url("https://fonts.googleapis.com/css?family=Flamenco");
+
+:root {
+    --rfjs-orange: #667eea;
+    --rfjs-orange-mid: #7c8ae8;
+    --rfjs-orange-deep: #5a67d8;
+    --rfjs-orange-btn-deep: #4c51bf;
+    --rfjs-orange-warm: #764ba2;
+    --rfjs-orange-warm-light: #8b5cf6;
+    --rfjs-gold: #f093fb;
+    --rfjs-gold-mid: #e879f9;
+    --rfjs-text-accent: #764ba2;
+    --rfjs-text-accent-strong: #4a2c7a;
+    --rfjs-ink: #1a1a1a;
+    --rfjs-text-muted: #5a4a62;
+    --rfjs-orange-rgb: 102, 126, 234;
+    --rfjs-surface: rgba(255, 255, 255, 0.96);
+    --rfjs-font: "Flamenco", Georgia, serif;
+    --rfjs-bg-main: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --rfjs-bg-page: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --rfjs-bg-soft: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --rfjs-gradient-card: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+    --rfjs-gradient-btn: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --rfjs-gradient-btn-hover: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    --rfjs-table-head: linear-gradient(135deg, #4c51bf 0%, #764ba2 55%, #667eea 100%);
+    --rfjs-cell: #faf8ff;
+    --rfjs-cell-alt: #f3f0ff;
+    --rfjs-accent-line: #667eea;
+    --rfjs-navy: #312e81;
+    --rfjs-navy-mid: #4c1d95;
+    --rfjs-purple: #764ba2;
+    --rfjs-banner-warm: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.15) 100%);
+    --rfjs-overlay-orange: rgba(var(--rfjs-orange-rgb), 0.28);
+}
+
+.rfjs-font,
+body.rfjs-font {
+    font-family: var(--rfjs-font) !important;
+}
+
+body.rfjs-page-bg {
+    background: var(--rfjs-bg-main);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+img.rfjs-logo-img {
+    display: inline-block;
+    max-height: 64px;
+    width: auto;
+    max-width: min(100%, 120px);
+    object-fit: contain;
+    border-radius: 14px;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img.rfjs-logo-img.rfjs-logo-lg {
+    max-height: 72px;
+    max-width: min(100%, 130px);
+    border-radius: 16px;
+}
+
+img.rfjs-logo-img.rfjs-logo-sm {
+    max-height: 48px;
+    max-width: 100px;
+    border-radius: 12px;
+}
+
+/* School crest — taller than wide; use on home, login, results */
+img.rfjs-logo-img.rfjs-logo-crest {
+    max-height: 120px;
+    max-width: min(100%, 220px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}

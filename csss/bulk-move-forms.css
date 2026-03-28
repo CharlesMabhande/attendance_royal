@@ -1,0 +1,184 @@
+/**
+ * Shared layout for admin bulk-move tools (grade / term / ECD).
+ * Wider canvas + 2–3 column grids on large screens to reduce vertical scroll.
+ */
+.bulk-move-page {
+    padding: clamp(8px, 1.2vw, 12px) clamp(10px, 2vw, 18px);
+}
+
+.bulk-move-wrap {
+    max-width: min(1680px, calc(100vw - 20px));
+    margin: 0 auto;
+}
+
+.bulk-move-card {
+    padding: 16px 22px 20px;
+}
+
+.bulk-move-card h1 {
+    font-size: 1.22rem;
+    margin-bottom: 6px;
+}
+
+.bulk-move-card .sub {
+    font-size: 0.9rem;
+    line-height: 1.42;
+    margin-bottom: 10px;
+}
+
+.bulk-move-card ul.rules {
+    margin: 8px 0 10px 18px;
+    font-size: 0.88rem;
+    line-height: 1.42;
+}
+
+.bulk-move-card .warn {
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    font-size: 0.86rem;
+}
+
+.bulk-move-card .card-logo-wrap {
+    margin-bottom: 10px;
+}
+
+.bulk-move-card .card-logo-wrap img {
+    max-height: 44px;
+    width: auto;
+}
+
+/* Source fields: up to 3 columns */
+.bulk-sources-row {
+    display: grid;
+    gap: 10px 18px;
+    grid-template-columns: 1fr;
+    margin-bottom: 12px;
+    align-items: start;
+}
+
+@media (min-width: 820px) {
+    .bulk-sources-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.bulk-sources-row .bulk-field > label {
+    display: block;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: #444;
+    font-size: 0.92rem;
+}
+
+.bulk-sources-row select,
+.bulk-sources-row input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 0.98rem;
+}
+
+/* Destination fieldsets: two columns */
+.bulk-dest-row {
+    display: grid;
+    gap: 12px 18px;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+
+@media (min-width: 880px) {
+    .bulk-dest-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.bulk-move-card fieldset.year-choice,
+.bulk-move-card fieldset.term-choice,
+.bulk-move-card fieldset.term-dest {
+    margin-top: 0;
+    padding: 12px 14px;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    background: #f8f9fa;
+}
+
+.bulk-move-card fieldset.year-choice > label,
+.bulk-move-card fieldset.term-choice > label,
+.bulk-move-card fieldset.term-dest > label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.bulk-move-card fieldset input[type="radio"] {
+    width: auto;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.bulk-move-card fieldset label.dest-year-input,
+.bulk-move-card fieldset label.dest-input {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 0.88rem;
+    cursor: default;
+}
+
+.bulk-move-card fieldset legend {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #444;
+    padding: 0 6px;
+}
+
+.bulk-move-card fieldset input[type="number"]:disabled,
+.bulk-move-card fieldset select:disabled {
+    opacity: 0.6;
+    background: #eee;
+    cursor: not-allowed;
+}
+
+.bulk-move-card fieldset select,
+.bulk-move-card fieldset input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 0.98rem;
+}
+
+/* Single full-width destination block (next term tool) */
+.bulk-dest-full {
+    margin-bottom: 10px;
+}
+
+.bulk-actions-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.bulk-actions-row .btn {
+    margin-top: 0;
+}
+
+.bulk-move-card .preview {
+    margin-top: 12px;
+    padding: 12px;
+    font-size: 0.9rem;
+}
+
+.bulk-move-card .hint {
+    margin-top: 10px;
+    font-size: 0.84rem;
+    line-height: 1.4;
+}
